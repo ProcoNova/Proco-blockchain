@@ -1,0 +1,59 @@
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+)
+
+var peers = []string{
+    "localhost:3001", // Node1
+    "localhost:3002", // Node2
+    // Node3 itself is localhost:3003
+}
+
+func main() {
+    fmt.Println("Starting ProCo Node3...")
+    
+    // Load or create blockchain
+    LoadOrCreateBlockchain("blocks.json")
+
+    // Start network server for incoming blocks
+    go startServer("3003")
+
+    reader := bufio.NewReader(os.Stdin)
+    for {
+        fmt.Print("> ")
+        input, _ := reader.ReadString('\n')
+        input = strings.TrimSpace(input)
+        cmd := strings.SplitN(input, " ", 2)
+
+        switch cmd[0] {
+        case "help":
+            fmt.Println("Available commands:\n show_chain\n add_block <data>\n validate\n create_wallet <initial_balance>\n list_wallets\n send <from_address> <to_address> <amount>\n balance <wallet_address>\n exit")
+        case "show_chain":
+            ShowChain()
+        case "add_block":
+            if len(cmd) < 2 {
+                fmt.Println("Usage: add_block <data>")
+                continue
+            }
+            data := cmd[1]
+            newBlock := AddBlock(data)
+            fmt.Println("Block added and blockchain saved.")
+            broadcastBlock(newBlock, peers) // broadcast to Node1 & Node2
+        case "validate":
+            if ValidateBlockchain() {
+                fmt.Println("Blockchain is valid")
+            } else {
+                fmt.Println("Blockchain is INVALID")
+            }
+        case "exit":
+            fmt.Println("Exiting Node3...")
+            return
+        default:
+            fmt.Println("Unknown command. Type 'help'")
+        }
+    }
+}

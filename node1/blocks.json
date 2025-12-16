@@ -1,0 +1,22 @@
+[
+  {
+    "index": 0,
+    "previous_hash": "0",
+    "timestamp": 0,
+    "data": [],
+    "hash": "GENESIS"
+  },
+  {
+    "index": 1,
+    "previous_hash": "GENESIS",
+    "timestamp": 1765451129,
+    "data": [
+      {
+        "from": "PROCO-6789abcdef012345",
+        "to": "PROCO-TEST-123",
+        "amount": 10
+      }
+    ],
+    "hash": "47454e455349533137363534353131323931"
+  }
+]
