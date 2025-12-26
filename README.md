@@ -77,3 +77,35 @@ MIT License (or your chosen license)
 
 ProCo is not affiliated with any existing blockchain networks.
 This project does not represent financial advice or an investment product.
+
+
+
+
+## ProCo Roadmap
+
+### Phase 1 — Foundation ✅
+- Blockchain core implementation
+- Genesis block creation
+- Fixed token supply
+- Single-node operation
+- Multi-node sync (Node1 & Node2)
+
+### Phase 2 — Network Growth 🚧
+- Peer discovery improvements
+- Node communication stability
+- Basic CLI tools
+- Improved logging & monitoring
+
+### Phase 3 — Developer Experience 🔜
+- Clear documentation
+- Contribution guidelines
+- Testnet setup
+- Block explorer (basic)
+
+### Phase 4 — Community & Research 🔮
+- Public testnet
+- Community feedback
+- Consensus refinement
+- Governance experiments
+
+> Timelines are flexible and quality-driven.
