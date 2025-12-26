@@ -1,40 +1,79 @@
-🚀 ProCo Blockchain (Power Core)
+# ProCo (Power Core) Blockchain ⚡
 
-ProCo is an experimental, open-source blockchain project focused on simplicity, transparency, and learning-first design.
-It is built from scratch to understand how blockchains work at their core — blocks, transactions, nodes, and consensus.
+ProCo (Power Core) is an experimental Layer-1 blockchain project focused on
+simplicity, transparency, and learning-driven decentralization.
 
-This project is in early development and is intended for:
+This project is built step-by-step to understand blockchain fundamentals deeply,
+rather than rushing toward hype or shortcuts.
 
-Developers learning blockchain internals
+---
 
-Open-source contributors
+## 🌱 Vision
 
-Researchers exploring lightweight blockchain designs
+To build a clean, understandable blockchain core that can evolve into a
+community-driven decentralized network.
 
-🌟 Vision
+ProCo prioritizes:
+- Learning by building
+- Transparency over hype
+- Strong fundamentals before scale
 
-Most blockchains are hard to understand and even harder to build from scratch.
-ProCo aims to be simple, readable, and educational, while still being practical.
+---
 
-Our goal is to build a clean, modular blockchain core that anyone can study, modify, and extend.
+## 🔧 Current Features
 
-🧩 Key Features (Current & Planned)
-✅ Current
+- Custom blockchain implementation
+- Block creation and validation
+- Fixed-supply native token
+- Genesis block and chain persistence
+- Multi-node setup (Node1 & Node2 synced)
+- AWS-based deployment (early stage)
 
-Custom blockchain structure
+---
 
-Block creation & validation
+## 🧱 Architecture (High Level)
 
-Basic transaction handling
+- Language: Go
+- Consensus: Experimental / custom (early stage)
+- Networking: Peer-to-peer (in progress)
+- Storage: Local block persistence
+- Tokenomics: Fixed supply (defined at genesis)
 
-Multi-node architecture (Node1 & Node2 tested)
+> ⚠️ This project is **not production-ready** and is intended for
+> research, experimentation, and learning.
 
-🔜 Planned
+---
 
-Peer discovery & networking improvements
+## 🚧 Project Status
 
-Consensus enhancements
+**Stage:** Early development  
+**Network:** Private / experimental  
+**Stability:** Under active development
 
-Wallet & CLI tools
+---
 
-Smart contract layer (future phase)
+## 🛣️ Roadmap
+
+See the roadmap section below for planned milestones.
+
+---
+
+## 🤝 Contributing
+
+This project is currently developed by a small core team.
+Contributions, suggestions, and discussions are welcome.
+
+More contribution guidelines will be added soon.
+
+---
+
+## 📜 License
+
+MIT License (or your chosen license)
+
+---
+
+## 🧠 Note
+
+ProCo is not affiliated with any existing blockchain networks.
+This project does not represent financial advice or an investment product.
