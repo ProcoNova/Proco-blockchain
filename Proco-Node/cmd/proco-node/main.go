@@ -5,7 +5,7 @@ import (
     "log"
     "time"
 
-    "github.com/yourname/proco-node/node"
+    "proco-node/node"
 )
 
 func main() {
