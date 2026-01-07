@@ -1,10 +1,19 @@
 # ProCo (Power Core) Blockchain ⚡
 
 ProCo (Power Core) is an experimental Layer-1 blockchain project focused on
-simplicity, transparency, and learning-driven decentralization.
+simpity, transparency, and learning-driven decentralization.
 
 This project is built step-by-step to understand blockchain fundamentals deeply,
 rather than rushing toward hype or shortcuts.
+
+---
+
+## 🎬 Live Local Demo (Running Node)
+
+Below is a real screen recording of the **ProCo node running locally**.
+The node automatically creates a new block **every 10 seconds**.
+
+![ProCo Node Demo](Proco-Node/docs/demo.gif)
 
 ---
 
@@ -28,6 +37,7 @@ ProCo prioritizes:
 - Genesis block and chain persistence
 - Multi-node setup (Node1 & Node2 synced)
 - AWS-based deployment (early stage)
+- Local runnable node demo
 
 ---
 
@@ -48,7 +58,7 @@ ProCo prioritizes:
 
 **Stage:** Early development  
 **Network:** Private / experimental  
-**Stability:** Under active development
+**Stability:** Under active development  
 
 ---
 
