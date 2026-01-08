@@ -7,7 +7,7 @@ This project is built step-by-step to understand blockchain fundamentals deeply,
 rather than rushing toward hype or shortcuts.
 ## 🧪 Test Coverage
 
-This repository includes a basic Go unit test (`node/node_test.go`) verifying the blockchain adds blocks correctly. Run `go test ./node` to check functionality.
+This repository includes a basic Go unit test **(`node/node_test.go`) verifying the blockchain adds blocks correctly. Run `go test ./node` to check functionality.**
 
 
 ---
