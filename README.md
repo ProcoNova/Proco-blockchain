@@ -12,8 +12,7 @@ Run:
 
 ```bash
 go test ./node
-
-
+```
 
 
 ## 🎬 Live Local Demo (Running Node)
