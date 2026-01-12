@@ -21,7 +21,8 @@ go test ./node
 Below is a real screen recording of the **ProCo node running locally**.  
 The node automatically creates a new block **every 10 seconds**.
 
-![ProCo Node Demo](docs/demo.gif)
+![Proco-NovaRunningDemo-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1e40bb78-e66e-45c3-9a17-9be7a037fb0c)
+
 
 
 
