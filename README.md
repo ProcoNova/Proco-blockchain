@@ -23,6 +23,8 @@ The node automatically creates a new block **every 10 seconds**.
 
 ![ProCo Node Demo](docs/demo.gif)
 
+
+
 **What problem does this project experiment with?**
 
 Most blockchain tutorials stop at theory or isolated components.
