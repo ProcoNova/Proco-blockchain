@@ -17,7 +17,7 @@ go test ./node
 
 ## 🎬 Live Local Demo (Running Node)
 
-![ProCo Node Demo](https://github.com/user-attachments/assets/1e40bb78-e66e-45c3-9a17-9be7a037fb0c)
+![ProCo Node Demo](docs/demo.gif)
 
 Below is a real screen recording of the **ProCo node running locally**.
 
