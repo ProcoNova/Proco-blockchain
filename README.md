@@ -18,7 +18,8 @@ go test ./node
 ## 🎬 Live Local Demo (Running Node)
 Below is a real screen recording of the **ProCo node running locally**.
 
-![ProCo Node Demo](docs/demo.gif)
+[ProCo Node Demo](docs/demo.gif)
+
 
 
 
