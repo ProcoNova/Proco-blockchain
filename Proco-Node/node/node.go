@@ -1,26 +1,35 @@
 package node
 
+import (
+	"time" // <-- ADD THIS
+)
+
+// node.go - Node structure and methods
+
+// Node uses Config from config.go
 type Node struct {
-    Config     *Config
-    Blockchain *Blockchain
+	Config     *Config
+	Blockchain *Blockchain
 }
 
-// Create a new node
+// NewNode creates a node with default genesis
 func NewNode(configPath string) (*Node, error) {
-    cfg, err := LoadConfig(configPath)
-    if err != nil {
-        return nil, err
-    }
-
-    node := &Node{
-        Config:     cfg,
-        Blockchain: NewBlockchain(),
-    }
-    return node, nil
+	// For now we ignore configPath for simplicity
+	cfg := &Config{
+		ChainID:          "proco-testnet",
+		EpochDurationSec: 0,
+		InitialSupply:    1000000,
+		Timestamp:        time.Now(), // time.Now() is fine now because we imported "time"
+	}
+	bc := NewBlockchain()
+	return &Node{
+		Config:     cfg,
+		Blockchain: bc,
+	}, nil
 }
 
-// Start the node (placeholder for now)
+// Start is a placeholder
 func (n *Node) Start() error {
-    // In real network, start listening and processing blocks
-    return nil
+	// nothing fancy yet
+	return nil
 }
