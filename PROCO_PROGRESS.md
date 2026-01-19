@@ -122,3 +122,42 @@ Next thought:
 
 _End of document_
 
+# ProCo Blockchain – Progress Log
+
+## Date: 2026-01-19
+
+### ✅ Multi-Node Networking (Local)
+
+- Successfully restructured project into Go-standard layout:
+  - `node/` package for shared blockchain & networking logic
+  - `cmd/node1` and `cmd/node2` for runnable node binaries
+
+- Node1 and Node2 run independently on different ports:
+  - Node1 → port 3001
+  - Node2 → port 3002
+
+- Implemented TCP-based peer-to-peer block propagation.
+
+- Node1 successfully:
+  - Created transactions
+  - Mined a new block
+  - Broadcasted the block to peers
+
+- Node2 successfully:
+  - Accepted incoming TCP connections
+  - Decoded and validated received blocks
+  - Appended valid blocks to its local blockchain
+  - Correctly rejected duplicate or out-of-order blocks
+
+### 🧠 Key Validation
+
+- Block index validation (`last.Index + 1`) works as intended.
+- Duplicate block detection confirmed.
+- Networking layer is functional on Windows localhost.
+
+### 📌 Status
+
+Stable local two-node blockchain network achieved.  
+Ready for next phase: transaction propagation, handshake protocol, and peer discovery.
+
+---
